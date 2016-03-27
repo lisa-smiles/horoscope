@@ -20,7 +20,7 @@
     [super viewDidLoad];
     
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"toutu"] forBarMetrics:UIBarMetricsDefault] ;
-    [[UIToolbar appearance] setBackgroundImage:[UIImage imageNamed:@"banner"] forToolbarPosition:UIBarPositionBottom barMetrics:UIBarMetricsDefault];
+//    [[UIToolbar appearance] setBackgroundImage:[UIImage imageNamed:@"banner"] forToolbarPosition:UIBarPositionBottom barMetrics:UIBarMetricsDefault];
     
 }
 

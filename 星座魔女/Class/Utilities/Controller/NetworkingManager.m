@@ -10,6 +10,7 @@
 #import "AFNetworking.h"
 #import "DayHoroscope.h"
 #import "WeekHoroscope.h"
+#import "MonthHoroscope.h"
 
 @implementation NetworkingManager
 
@@ -86,7 +87,17 @@
             }
             break;
                 
-        case Month:
+            case Month:{
+                MonthHoroscope *monthHoroscope = [MonthHoroscope new];
+                monthHoroscope.name    = responseObject[@"name"];
+                monthHoroscope.date    = responseObject[@"date"];
+                monthHoroscope.health  = responseObject[@"health"];
+                monthHoroscope.all     = responseObject[@"all"];
+                monthHoroscope.money   = responseObject[@"money"];
+                monthHoroscope.love    = responseObject[@"love"];
+                monthHoroscope.work    = responseObject[@"work"];
+                success(monthHoroscope);
+            }
 
             break;
                 

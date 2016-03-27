@@ -54,9 +54,11 @@ static NSString * const cellidentifier= @"cell";
     self.edgesForExtendedLayout = NO;
     
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"toutu"] forBarMetrics:UIBarMetricsDefault];
-    [self.tabBarController.tabBar setBackgroundImage:[UIImage imageNamed:@"banner"]];
+    [self.tabBarController.tabBar setBackgroundImage:[UIImage imageNamed:@"toutu"]];
+    
+
 //    [self.tabBarController.tabBar setBackgroundColor:[UIColor lightGrayColor]];
-    self.ConsCollectionView.translatesAutoresizingMaskIntoConstraints = NO;//???
+//    self.ConsCollectionView.translatesAutoresizingMaskIntoConstraints = NO;
     
     [self.navigationController.navigationBar setBarStyle:UIBarStyleBlack];
     
@@ -87,7 +89,6 @@ static NSString * const cellidentifier= @"cell";
 //    UIViewController *descriptionView = [self.storyboard instantiateViewControllerWithIdentifier:@""];
     //解析出来的参数赋值
     HoroscopeController *today = [self.storyboard instantiateViewControllerWithIdentifier:@"TodayVC"];
-    //[self.storyboard instantiateViewControllerWithIdentifier:@"TodayVC"]
     today.ConsName = self.allConsNames[indexPath.row];
     [self.navigationController pushViewController:today animated:YES];
 }

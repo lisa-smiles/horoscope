@@ -14,12 +14,14 @@
 #import "DayHoroscope.h"
 #import "WeekHoroscope.h"
 #import "ConstellationsController.h"
+#import "MonthCell.h"
+#import "MonthHoroscope.h"
 
 @interface HoroscopeController ()
 
 @property (nonatomic, strong) DayHoroscope *dayHoroscope;
 @property (nonatomic, strong) WeekHoroscope *weekHoroscope;
-
+@property (nonatomic, strong) MonthHoroscope *monthHoroscope;
 @property (nonatomic, assign) enum types type;
 
 @property (weak, nonatomic) IBOutlet UIImageView *headerImage;
@@ -52,15 +54,14 @@ static const CGFloat buttonHeight = 40;
     
     
     [self.navigationController.navigationBar setBarStyle:UIBarStyleBlack];
-    
     self.type = Today;
-    
     [self getHoroscopeData];
     
     self.titleButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     
-    self.titleButton.frame = CGRectMake(0, 0, 100, 40);
+    self.titleButton.frame = CGRectMake(0, 0, 100, buttonHeight);
     self.titleButton.backgroundColor = [UIColor clearColor];
+    
     
     [self.titleButton setTitle:self.naviTitle[0] forState:UIControlStateNormal];
     [self.titleButton addTarget:self action:@selector(dropDownSwitch) forControlEvents:UIControlEventTouchUpInside];
@@ -73,7 +74,7 @@ static const CGFloat buttonHeight = 40;
     for (int i = 0; i < self.naviTitle.count; i++) {
 //        self.buttonView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, buttonHeight * i);
         UIButton *button = [UIButton new];
-        button.frame = CGRectMake(0, 40*i, [UIScreen mainScreen].bounds.size.width, buttonHeight);
+        button.frame = CGRectMake(0, buttonHeight*i, [UIScreen mainScreen].bounds.size.width, buttonHeight);
         [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [button setTitle:self.naviTitle[i] forState:UIControlStateNormal];
         button.tag = i;
@@ -117,6 +118,11 @@ static const CGFloat buttonHeight = 40;
         case 3:
             self.type = NextWeek;
             break;
+        case 4:
+            self.type = Month;
+            break;
+        case 5:
+            self.type = Year;
         default:
             break;
     }
@@ -125,6 +131,7 @@ static const CGFloat buttonHeight = 40;
 }
 
 -(void) getHoroscopeData {
+    
     [NetworkingManager getHoroscope:self.ConsName withType:self.type withSuccess:^(id responseObject) {
         switch (self.type) {
             case Today:
@@ -146,6 +153,13 @@ static const CGFloat buttonHeight = 40;
                 break;
                 
             case Month:
+            {
+                self.monthHoroscope = (MonthHoroscope *)responseObject;
+                self.headerConsName.text = self.monthHoroscope.name;
+                self.headerDate.text = self.monthHoroscope.date;
+                self.headerImage.image = [UIImage imageNamed:self.monthHoroscope.name];
+
+            }
                 
                 break;
                 
@@ -227,12 +241,26 @@ static const CGFloat buttonHeight = 40;
             cell.money.text = self.weekHoroscope.money;
             cell.love.text = self.weekHoroscope.love;
             cell.work.text = self.weekHoroscope.work;
+        NSLog(@"...");
+            return cell;
+        }
+            
+            
+        case Month:
+        {
+            
+            MonthCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell4" forIndexPath:indexPath];
+            cell.health.text = self.monthHoroscope.health;
+            cell.all.text = self.monthHoroscope.all;
+            cell.money.text = self.monthHoroscope.money;
+            cell.love.text = self.monthHoroscope.love;
+            cell.work.text = self.monthHoroscope.work;
+//            NSLog(@"...");
             
             return cell;
         }
-        case Month:
             
-            break;
+          
         case Year:
             
             break;
