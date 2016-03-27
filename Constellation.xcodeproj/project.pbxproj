@@ -62,7 +62,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4200A0A81C984BC300229A9C /* 星座魔女.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "星座魔女.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4200A0A81C984BC300229A9C /* Constellation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Constellation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4200A0AC1C984BC300229A9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4200A0AE1C984BC300229A9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
 		4200A0AF1C984BC300229A9C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
@@ -174,7 +174,7 @@
 		4200A09F1C984BC300229A9C = {
 			isa = PBXGroup;
 			children = (
-				4200A0AA1C984BC300229A9C /* 星座魔女 */,
+				4200A0AA1C984BC300229A9C /* Constellation */,
 				4200A0A91C984BC300229A9C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -182,12 +182,12 @@
 		4200A0A91C984BC300229A9C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4200A0A81C984BC300229A9C /* 星座魔女.app */,
+				4200A0A81C984BC300229A9C /* Constellation.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4200A0AA1C984BC300229A9C /* 星座魔女 */ = {
+		4200A0AA1C984BC300229A9C /* Constellation */ = {
 			isa = PBXGroup;
 			children = (
 				42FD327A1C9AF91B0007B667 /* Class */,
@@ -196,6 +196,7 @@
 				4200A0BC1C984BC300229A9C /* Info.plist */,
 				4200A0AB1C984BC300229A9C /* Supporting Files */,
 			);
+			name = Constellation;
 			path = "星座魔女";
 			sourceTree = "<group>";
 		};
@@ -436,9 +437,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4200A0A71C984BC300229A9C /* 星座魔女 */ = {
+		4200A0A71C984BC300229A9C /* Constellation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4200A0BF1C984BC300229A9C /* Build configuration list for PBXNativeTarget "星座魔女" */;
+			buildConfigurationList = 4200A0BF1C984BC300229A9C /* Build configuration list for PBXNativeTarget "Constellation" */;
 			buildPhases = (
 				4200A0A41C984BC300229A9C /* Sources */,
 				4200A0A51C984BC300229A9C /* Frameworks */,
@@ -448,9 +449,9 @@
 			);
 			dependencies = (
 			);
-			name = "星座魔女";
+			name = Constellation;
 			productName = "星座魔女";
-			productReference = 4200A0A81C984BC300229A9C /* 星座魔女.app */;
+			productReference = 4200A0A81C984BC300229A9C /* Constellation.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -468,7 +469,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4200A0A31C984BC300229A9C /* Build configuration list for PBXProject "星座魔女" */;
+			buildConfigurationList = 4200A0A31C984BC300229A9C /* Build configuration list for PBXProject "Constellation" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -481,7 +482,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4200A0A71C984BC300229A9C /* 星座魔女 */,
+				4200A0A71C984BC300229A9C /* Constellation */,
 			);
 		};
 /* End PBXProject section */
@@ -657,7 +658,7 @@
 				INFOPLIST_FILE = "星座魔女/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.miclle.----";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Constellation;
 			};
 			name = Debug;
 		};
@@ -668,14 +669,14 @@
 				INFOPLIST_FILE = "星座魔女/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.miclle.----";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Constellation;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4200A0A31C984BC300229A9C /* Build configuration list for PBXProject "星座魔女" */ = {
+		4200A0A31C984BC300229A9C /* Build configuration list for PBXProject "Constellation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4200A0BD1C984BC300229A9C /* Debug */,
@@ -684,7 +685,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4200A0BF1C984BC300229A9C /* Build configuration list for PBXNativeTarget "星座魔女" */ = {
+		4200A0BF1C984BC300229A9C /* Build configuration list for PBXNativeTarget "Constellation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4200A0C01C984BC300229A9C /* Debug */,
