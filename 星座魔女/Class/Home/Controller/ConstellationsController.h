@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface showConstellationsViewController : UIViewController
+@interface ConstellationsController : UIViewController
 
 @end

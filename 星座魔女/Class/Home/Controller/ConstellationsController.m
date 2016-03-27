@@ -6,12 +6,12 @@
 //  Copyright © 2016年 lisa. All rights reserved.
 //
 
-#import "showConstellationsViewController.h"
+#import "ConstellationsController.h"
 #import "showContellationCell.h"
 #import "HoroscopeController.h"
 #import "BaseViewController.h"
 
-@interface showConstellationsViewController () <UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
+@interface ConstellationsController () <UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UICollectionView *ConsCollectionView;
 @property (nonatomic, strong) NSArray *allConsImages;
 @property (nonatomic, strong) NSArray *allConsNames;
