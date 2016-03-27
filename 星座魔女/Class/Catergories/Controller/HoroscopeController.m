@@ -13,7 +13,7 @@
 #import "TableViewCell3.h"
 #import "DayHoroscope.h"
 #import "WeekHoroscope.h"
-#import "showConstellationsViewController.h"
+#import "ConstellationsController.h"
 
 @interface HoroscopeController ()
 

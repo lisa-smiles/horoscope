@@ -20,7 +20,7 @@
 @end
 static NSString * const cellidentifier= @"cell";
 
-@implementation showConstellationsViewController
+@implementation ConstellationsController
 
 - (NSArray *)allConsImages {
     if (!_allConsImages) {

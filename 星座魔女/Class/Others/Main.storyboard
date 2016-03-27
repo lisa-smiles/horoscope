@@ -7,7 +7,7 @@
         <!--星座列表-->
         <scene sceneID="KEg-wk-eUl">
             <objects>
-                <viewController id="OxQ-mX-ksy" customClass="showConstellationsViewController" sceneMemberID="viewController">
+                <viewController id="OxQ-mX-ksy" customClass="ConstellationsController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AN7-0c-H48"/>
                         <viewControllerLayoutGuide type="bottom" id="8Wu-O4-m66"/>
