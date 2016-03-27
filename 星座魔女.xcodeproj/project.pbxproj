@@ -53,7 +53,7 @@
 		4219D2F51CA661E70053C607 /* NetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4219D2F41CA661E70053C607 /* NetworkingManager.m */; };
 		4219D2F81CA66D0B0053C607 /* TableViewCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4219D2F71CA66D0B0053C607 /* TableViewCell1.m */; };
 		4219D2FB1CA6710E0053C607 /* TableViewCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4219D2FA1CA6710E0053C607 /* TableViewCell2.m */; };
-		4219D2FE1CA696F20053C607 /* TodayHoroscopeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4219D2FD1CA696F20053C607 /* TodayHoroscopeTableViewController.m */; };
+		4219D2FE1CA696F20053C607 /* HoroscopeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4219D2FD1CA696F20053C607 /* HoroscopeController.m */; };
 		4219D3011CA6A9730053C607 /* DayHoroscope.m in Sources */ = {isa = PBXBuildFile; fileRef = 4219D3001CA6A9730053C607 /* DayHoroscope.m */; };
 		4219D3041CA6A99D0053C607 /* WeekHoroscope.m in Sources */ = {isa = PBXBuildFile; fileRef = 4219D3031CA6A99D0053C607 /* WeekHoroscope.m */; };
 		4219D3071CA703B90053C607 /* TableViewCell3.m in Sources */ = {isa = PBXBuildFile; fileRef = 4219D3061CA703B90053C607 /* TableViewCell3.m */; };
@@ -147,8 +147,8 @@
 		4219D2F71CA66D0B0053C607 /* TableViewCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell1.m; sourceTree = "<group>"; };
 		4219D2F91CA6710E0053C607 /* TableViewCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell2.h; sourceTree = "<group>"; };
 		4219D2FA1CA6710E0053C607 /* TableViewCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell2.m; sourceTree = "<group>"; };
-		4219D2FC1CA696F20053C607 /* TodayHoroscopeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayHoroscopeTableViewController.h; sourceTree = "<group>"; };
-		4219D2FD1CA696F20053C607 /* TodayHoroscopeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayHoroscopeTableViewController.m; sourceTree = "<group>"; };
+		4219D2FC1CA696F20053C607 /* HoroscopeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoroscopeController.h; sourceTree = "<group>"; };
+		4219D2FD1CA696F20053C607 /* HoroscopeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoroscopeController.m; sourceTree = "<group>"; };
 		4219D2FF1CA6A9730053C607 /* DayHoroscope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayHoroscope.h; sourceTree = "<group>"; };
 		4219D3001CA6A9730053C607 /* DayHoroscope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayHoroscope.m; sourceTree = "<group>"; };
 		4219D3021CA6A99D0053C607 /* WeekHoroscope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekHoroscope.h; sourceTree = "<group>"; };
@@ -220,8 +220,8 @@
 		420BC8661C9C0E9F0001C756 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4219D2FC1CA696F20053C607 /* TodayHoroscopeTableViewController.h */,
-				4219D2FD1CA696F20053C607 /* TodayHoroscopeTableViewController.m */,
+				4219D2FC1CA696F20053C607 /* HoroscopeController.h */,
+				4219D2FD1CA696F20053C607 /* HoroscopeController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -329,20 +329,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		4219D2C21CA636F80053C607 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		4219D2C31CA636F80053C607 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		4219D2CA1CA655620053C607 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,8 +360,6 @@
 			children = (
 				420BC8651C9C0DFE0001C756 /* Catergories */,
 				42FD327B1C9AF91B0007B667 /* Home */,
-				42FD32861C9AF91B0007B667 /* Libraries */,
-				42FD328A1C9AF91B0007B667 /* Models */,
 				42FD32901C9AF91B0007B667 /* Others */,
 				42FD32941C9AF91B0007B667 /* Resourses */,
 				42FD32951C9AF91B0007B667 /* Utilities */,
@@ -387,7 +371,6 @@
 			isa = PBXGroup;
 			children = (
 				42FD327C1C9AF91B0007B667 /* Controller */,
-				42FD32801C9AF91B0007B667 /* Model */,
 				42FD32831C9AF91B0007B667 /* View */,
 			);
 			path = Home;
@@ -402,13 +385,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		42FD32801C9AF91B0007B667 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		42FD32831C9AF91B0007B667 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -417,44 +393,6 @@
 				420BC8261C9BA1400001C756 /* showContellationCell.xib */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		42FD32861C9AF91B0007B667 /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
-				42FD32871C9AF91B0007B667 /* Controller */,
-				42FD32881C9AF91B0007B667 /* Model */,
-				42FD32891C9AF91B0007B667 /* View */,
-			);
-			path = Libraries;
-			sourceTree = "<group>";
-		};
-		42FD32871C9AF91B0007B667 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		42FD32881C9AF91B0007B667 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		42FD32891C9AF91B0007B667 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		42FD328A1C9AF91B0007B667 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		42FD32901C9AF91B0007B667 /* Others */ = {
@@ -479,8 +417,6 @@
 		42FD32951C9AF91B0007B667 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				4219D2C21CA636F80053C607 /* Model */,
-				4219D2C31CA636F80053C607 /* View */,
 				42FD32961C9AF91B0007B667 /* Controller */,
 			);
 			path = Utilities;
@@ -587,7 +523,7 @@
 				420BC8FE1C9D53C00001C756 /* FUITextField.m in Sources */,
 				420BC8C01C9D43890001C756 /* BaseViewController.m in Sources */,
 				4219D2DE1CA655620053C607 /* AFHTTPRequestOperation.m in Sources */,
-				4219D2FE1CA696F20053C607 /* TodayHoroscopeTableViewController.m in Sources */,
+				4219D2FE1CA696F20053C607 /* HoroscopeController.m in Sources */,
 				4219D3071CA703B90053C607 /* TableViewCell3.m in Sources */,
 				420BC8271C9BA1400001C756 /* showContellationCell.m in Sources */,
 				4219D2E31CA655620053C607 /* AFURLConnectionOperation.m in Sources */,

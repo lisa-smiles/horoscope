@@ -6,7 +6,7 @@
 //  Copyright © 2016年 lisa. All rights reserved.
 //
 
-#import "TodayHoroscopeTableViewController.h"
+#import "HoroscopeController.h"
 #import "NetworkingManager.h"
 #import "TableViewCell1.h"
 #import "TableViewCell2.h"
@@ -15,7 +15,7 @@
 #import "WeekHoroscope.h"
 #import "showConstellationsViewController.h"
 
-@interface TodayHoroscopeTableViewController ()
+@interface HoroscopeController ()
 
 @property (nonatomic, strong) DayHoroscope *dayHoroscope;
 @property (nonatomic, strong) WeekHoroscope *weekHoroscope;
@@ -35,7 +35,7 @@
 //@property (weak, nonatomic) IBOutlet UITableView *TableView;
 @end
 
-@implementation TodayHoroscopeTableViewController
+@implementation HoroscopeController
 
 static const CGFloat buttonHeight = 40;
 

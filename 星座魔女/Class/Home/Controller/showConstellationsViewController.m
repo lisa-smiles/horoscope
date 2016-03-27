@@ -8,7 +8,7 @@
 
 #import "showConstellationsViewController.h"
 #import "showContellationCell.h"
-#import "TodayHoroscopeTableViewController.h"
+#import "HoroscopeController.h"
 #import "BaseViewController.h"
 
 @interface showConstellationsViewController () <UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
@@ -86,7 +86,7 @@ static NSString * const cellidentifier= @"cell";
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
 //    UIViewController *descriptionView = [self.storyboard instantiateViewControllerWithIdentifier:@""];
     //解析出来的参数赋值
-    TodayHoroscopeTableViewController *today = [self.storyboard instantiateViewControllerWithIdentifier:@"TodayVC"];
+    HoroscopeController *today = [self.storyboard instantiateViewControllerWithIdentifier:@"TodayVC"];
     //[self.storyboard instantiateViewControllerWithIdentifier:@"TodayVC"]
     today.ConsName = self.allConsNames[indexPath.row];
     [self.navigationController pushViewController:today animated:YES];

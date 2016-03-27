@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TodayHoroscopeTableViewController : UITableViewController
+@interface HoroscopeController : UITableViewController
 @property (nonatomic, strong) NSString *ConsName;
 @end
