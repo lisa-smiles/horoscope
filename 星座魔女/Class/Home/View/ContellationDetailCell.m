@@ -6,9 +6,9 @@
 //  Copyright © 2016年 lisa. All rights reserved.
 //
 
-#import "showContellationCell.h"
+#import "ContellationDetailCell.h"
 
-@implementation showContellationCell
+@implementation ContellationDetailCell
 
 - (void)awakeFromNib {
     // Initialization code

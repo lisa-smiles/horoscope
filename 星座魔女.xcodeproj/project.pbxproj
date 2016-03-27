@@ -11,8 +11,8 @@
 		4200A0B01C984BC300229A9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4200A0AF1C984BC300229A9C /* AppDelegate.m */; };
 		4200A0B81C984BC300229A9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4200A0B71C984BC300229A9C /* Assets.xcassets */; };
 		4200A0BB1C984BC300229A9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4200A0B91C984BC300229A9C /* LaunchScreen.storyboard */; };
-		420BC8271C9BA1400001C756 /* showContellationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 420BC8251C9BA1400001C756 /* showContellationCell.m */; };
-		420BC8281C9BA1400001C756 /* showContellationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 420BC8261C9BA1400001C756 /* showContellationCell.xib */; };
+		420BC8271C9BA1400001C756 /* ContellationDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 420BC8251C9BA1400001C756 /* ContellationDetailCell.m */; };
+		420BC8281C9BA1400001C756 /* ContellationDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 420BC8261C9BA1400001C756 /* ContellationDetailCell.xib */; };
 		420BC8C01C9D43890001C756 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 420BC8BF1C9D43890001C756 /* BaseViewController.m */; };
 		420BC8F81C9D53C00001C756 /* FUIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 420BC8C91C9D53C00001C756 /* FUIAlertView.m */; };
 		420BC8F91C9D53C00001C756 /* FUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 420BC8CB1C9D53C00001C756 /* FUIButton.m */; };
@@ -69,9 +69,9 @@
 		4200A0B71C984BC300229A9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4200A0BA1C984BC300229A9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4200A0BC1C984BC300229A9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		420BC8241C9BA1400001C756 /* showContellationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = showContellationCell.h; sourceTree = "<group>"; };
-		420BC8251C9BA1400001C756 /* showContellationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = showContellationCell.m; sourceTree = "<group>"; };
-		420BC8261C9BA1400001C756 /* showContellationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = showContellationCell.xib; sourceTree = "<group>"; };
+		420BC8241C9BA1400001C756 /* ContellationDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContellationDetailCell.h; sourceTree = "<group>"; };
+		420BC8251C9BA1400001C756 /* ContellationDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContellationDetailCell.m; sourceTree = "<group>"; };
+		420BC8261C9BA1400001C756 /* ContellationDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContellationDetailCell.xib; sourceTree = "<group>"; };
 		420BC8BE1C9D43890001C756 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		420BC8BF1C9D43890001C756 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		420BC8C71C9D53C00001C756 /* FlatUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlatUIKit.h; sourceTree = "<group>"; };
@@ -388,9 +388,9 @@
 		42FD32831C9AF91B0007B667 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				420BC8241C9BA1400001C756 /* showContellationCell.h */,
-				420BC8251C9BA1400001C756 /* showContellationCell.m */,
-				420BC8261C9BA1400001C756 /* showContellationCell.xib */,
+				420BC8241C9BA1400001C756 /* ContellationDetailCell.h */,
+				420BC8251C9BA1400001C756 /* ContellationDetailCell.m */,
+				420BC8261C9BA1400001C756 /* ContellationDetailCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -492,7 +492,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				420BC90F1C9D53C00001C756 /* Lato-Bold.ttf in Resources */,
-				420BC8281C9BA1400001C756 /* showContellationCell.xib in Resources */,
+				420BC8281C9BA1400001C756 /* ContellationDetailCell.xib in Resources */,
 				4200A0BB1C984BC300229A9C /* LaunchScreen.storyboard in Resources */,
 				420BC9111C9D53C00001C756 /* Lato-Light.ttf in Resources */,
 				4200A0B81C984BC300229A9C /* Assets.xcassets in Resources */,
@@ -525,7 +525,7 @@
 				4219D2DE1CA655620053C607 /* AFHTTPRequestOperation.m in Sources */,
 				4219D2FE1CA696F20053C607 /* HoroscopeController.m in Sources */,
 				4219D3071CA703B90053C607 /* TableViewCell3.m in Sources */,
-				420BC8271C9BA1400001C756 /* showContellationCell.m in Sources */,
+				420BC8271C9BA1400001C756 /* ContellationDetailCell.m in Sources */,
 				4219D2E31CA655620053C607 /* AFURLConnectionOperation.m in Sources */,
 				420BC8FF1C9D53C00001C756 /* NSString+Icons.m in Sources */,
 				420BC8FC1C9D53C00001C756 /* FUISegmentedControl.m in Sources */,

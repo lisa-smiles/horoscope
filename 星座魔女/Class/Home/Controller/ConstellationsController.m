@@ -7,7 +7,7 @@
 //
 
 #import "ConstellationsController.h"
-#import "showContellationCell.h"
+#import "ContellationDetailCell.h"
 #import "HoroscopeController.h"
 #import "BaseViewController.h"
 
@@ -48,7 +48,7 @@ static NSString * const cellidentifier= @"cell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.ConsCollectionView registerNib:[UINib nibWithNibName:@"showContellationCell" bundle:nil] forCellWithReuseIdentifier:cellidentifier];
+    [self.ConsCollectionView registerNib:[UINib nibWithNibName:@"ContellationDetailCell" bundle:nil] forCellWithReuseIdentifier:cellidentifier];
     self.ConsCollectionView.delegate = self;
     self.ConsCollectionView.dataSource = self;
     self.edgesForExtendedLayout = NO;
@@ -71,7 +71,7 @@ static NSString * const cellidentifier= @"cell";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-           showContellationCell *cellItem = [collectionView dequeueReusableCellWithReuseIdentifier:cellidentifier forIndexPath:indexPath];
+           ContellationDetailCell *cellItem = [collectionView dequeueReusableCellWithReuseIdentifier:cellidentifier forIndexPath:indexPath];
     
 //        [[NSBundle mainBundle]loadNibNamed:@"ConstellationsCollectionViewCell" owner:self options:nil];
     

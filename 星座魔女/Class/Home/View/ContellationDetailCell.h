@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface showContellationCell : UICollectionViewCell
+@interface ContellationDetailCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *ConsImageView;
 @property (weak, nonatomic) IBOutlet UILabel *ConsName;
