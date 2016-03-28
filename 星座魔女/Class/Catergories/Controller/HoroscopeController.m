@@ -72,7 +72,6 @@ static const CGFloat buttonHeight = 40;
    self.buttonView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, buttonHeight * self.naviTitle.count);
     
     for (int i = 0; i < self.naviTitle.count; i++) {
-//        self.buttonView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, buttonHeight * i);
         UIButton *button = [UIButton new];
         button.frame = CGRectMake(0, buttonHeight*i, [UIScreen mainScreen].bounds.size.width, buttonHeight);
         [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -160,8 +159,8 @@ static const CGFloat buttonHeight = 40;
                 self.headerImage.image = [UIImage imageNamed:self.monthHoroscope.name];
 
             }
-                
                 break;
+                
                 
             case Year:
                 
@@ -200,6 +199,8 @@ static const CGFloat buttonHeight = 40;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    tableView.bounces = NO;
     
     tableView.allowsSelection = NO;
 
