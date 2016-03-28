@@ -56,6 +56,7 @@
         switch (type) {
         case Today:
         case Tomorrow:{
+            
             DayHoroscope *dayHoroscope = [DayHoroscope new];
             dayHoroscope.name       = responseObject[@"name"];
             dayHoroscope.datetime   = responseObject[@"datetime"];
@@ -69,7 +70,7 @@
             dayHoroscope.color      = responseObject[@"color"];
             dayHoroscope.summary    = responseObject[@"summary"];
             success(dayHoroscope);
-            }
+        }
             break;
                 
         case Week:

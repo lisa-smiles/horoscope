@@ -54,7 +54,7 @@ static NSString * const cellidentifier= @"cell";
     self.edgesForExtendedLayout = NO;
     
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"toutu"] forBarMetrics:UIBarMetricsDefault];
-    [self.tabBarController.tabBar setBackgroundImage:[UIImage imageNamed:@"toutu"]];
+    [self.tabBarController.tabBar setBackgroundImage:[UIImage imageNamed:@"tu"]];
     
 
 //    [self.tabBarController.tabBar setBackgroundColor:[UIColor lightGrayColor]];
